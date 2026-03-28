@@ -1,222 +1,39 @@
--- Variabel untuk menyimpan kecepatan
-local speed = 25
-local speedEnabled = true
-local guiVisible = true
-
--- Fungsi untuk mengatur kecepatan
-local function setSpeed(newSpeed)
-    speed = newSpeed
-    if speedEnabled then
-        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = speed
-    end
+-- // Protected by Monsy Obfuscator
+local YLR_RXvc={"71767397749b0518c16baed7c773b55e3ae5b6c1c5245f3926bbf07c41da0c7a9c243e982b5586460d0f0a22664d4bea26e0c4a4801142c3d04d1cc030adf8af140e61a6cad19ac504a96e1b9ed5a6174d6271db69fab5b121ea90326d4bbedc1389d40f","7a49062857faa80dd0896ebc9a21f0d1e0ecfc7bc7599b55a6f04b871c8013f4ceee7ff89d4b002a9e62b1ea5d5babb1171a47792769b12209c23a4ece06a62157d6bc75293be0408554a232272a073cc35eb5fb71f22b3905824b74cb06cbf443fc3e68","23fd002184597ebac7b579c72080292a30eedabad70fac8fd02d7df743723c264d395da60d4342dbaf60d2b5873e6dcc9f827ef61cc2c462c8e8bad21e91e0b927f2bc1ac33d5a838f8341e8537afe2b6b16b589d8534c290e36b5f219ddaf719ec9739e","755230e9c3aff68d23284b2914425e6e1c28f732e46551dbd1027f447511313bd2c937d7c850b57002fd58236d9b3021ff3528968d555e2f31834c66c9df9a5c3f3fa6c79ed1406c71a830bd34f74bc220916cdb2556713b31356735c9a5b39c8da49935","0e0db818209e7add28d9a0b43441b803816d7dba8776b349a7450a8dded8fd3c885a84a134980800da78a86e835b7d074dfdb692959be793d643d92b0611b20cd25b67a8d97f37d5e5ec922b2c49f3a720408b4a3befa274d62240c07f59920d14f4fec3","042c722689a1cc878c00a85074c340423ca7311a0796f336476ab2a489798f47821680824f27bcf1cc59824b35969207bc8ba4da9f51ecb1dd2f71c91a79b390ccefc2074f105a23396b798e892bba5acd692b90c44ef573021c80463e41594ed49bb77d","06508f4137efe22088c64bc0d7e5744d2224f9e7c566f49ed86fd4428fa27537d44a152689d57856c1bba087df95799e3daea45b250f6b8c126744d753b0d34dc34afb69269bf8da25758c58d8a44c033e751d2b7168976ec3047d16d5c955f053174a55","35f0f1c6676a4ddd34f43b1313befac62ed17bcf3460c9bf7ab5b62f241ef66e896d376f4a54d8108f9c47928cefe65d7b313215231e59b43268acad8dbf1a5cd56eb4d3b702c8e3c3d3327f4973ffcf302656fa20c6f43b63681086803b8c473c545a39","4f6b5edcc35b9220c4a96a77474e4e7b73a5d60f4e20708d85d017278752bb41c773b237d129ab9285363b3511d4e130d55b99e1655e7a40eb3a73512163f3e934e27f0dc0f8553a3f91f73f81a57fb71ab24a8911914f98342c31b9df3cb53e2a635025","07ef7b562aa092e4904fc3623ae35e68693df7809e24172f23ef709b32f20201e466ad200c6869073804e9ad37946a3822bd8864cdfcf61e2bd84ccc3403fe2882870a32d06bb6eb86465ead746147311a9a449c130a92fa82237be4b435a222c9f5bff6","383a6d33d4d859c45b453e57e54f69cbe59505391b42b1b130f24fca6d60f624efe8984b235d0a362dd90ec721f265adccf0fac9ce705f9686573fff1460e1c127d34e96c7e1e003251549d1d024fb0c18538c560d23fd8a5f4c762d271f75ba300f0e8e","db8faf288e0fce65c9b9739e0b6166d99fab737d25634832131e4bccc25275bec8bfa23c1891b480d876960fcd44615bd72c09c629238a1730232f91d4c3f4493311296893dd0cc8d174726289e36b673cf7fbca135df8ff18397a1271b5738cd241bd21","78e4856ec9b745c197d3946ec74e8c4cc60f525d1a78f8748f52ab92210ab23708695f823b89a576084be9203650b1238d473e678c39b74236820e807a178d4875fba6e23a62fd725d5c8aad946254f28f1ea965c8523a2689f4f4c72ade4220a3f46ab7","2e0a721a114d0b2c99a4e04c8306443ebf41f6d13d37bff53ca5a1ad0469a39d3babc26043bdebd1684bb797d1af2e0fc723a7cc336901c6c15d6ab630b250833991e982c3a136fedbbe9b3d2866016c7852a825c91bfd1ddb2f7509c940a0b5dbf74b78","13dcafd7345b64f28f490c24909a73830dad7afb40a5f697289bac87d955f8f34dfb43c95f4eac1f83b18cf41a4ce6129e8094747fa4835a4d0f0597282bb73febac3a9f34f7ab360f62e1673e75bc69c10f0ad9429fbed718599661517575a65f86f9ad","dd1b2466c9306c0a1e3dfdd860aa75460210bdcdc584b32f3778b561c821ad3a5f6252c616af97b08b0c6728859a4e988c562c433457b502dad442ca75582d974df9713e9e51b2d7c847ab29716de58a8144b5e5ddc52b648ca4ae3ad39dbab8c655a77f","1e3085cb98d1e820827a3e0fc844a26ac9d9f844c451311e93f9bece295ff8a7caa871537a367d0f2a43bee1892a8c49e541eb8f9bd44f6cde722dacccf879c1389eb0653f5fbd0cc728405099f94c3b17a1c22410e689881e4dbccc0a11b30de1fd17c6","047894633e7ad4f938beb377e328bdc25d1c2c013f2abede8c9bfaebcdf48ab9c9e76723b864162a75fa8443d63d539338d466d0da2beeaf25f6762f0f25b8d236a7cb0e84d004d5f2699fc63e79ca6534b65ece285b7e823d57f8f43f7043d79906ad98","177f2bfb3efd303e2cd272971ebf30abc97f892ad07df6ccc752276234c9a6c24149670c71ba337be00f2c30949a37c7661cab70c7a16f91825788f28ced7ba1c4000012c6d0f944c77ecab0234bff6839fbf6a943e4710c2e4a1396665f48ea38efaef8","89f7502e164e79d011e2cb47f6b6d8c7040da5290c77ca062c470629232ab292a6069e4079e8a588817e0124c7b02035d8b51e0e340cb30964af6253051a73016183f62dcfa2f0654f63fbbd99d0443dc8419e400e4932cd7047e020306babf8ed737126","2684372589e88d48430ddc3f7598349777a187422ab9b4c2dc4143f07a04f05026f979802a41bc1f22137dbf7ffebc90577005684df5c44382f771cd880ebf29c56e2201c5f467cc2b1d052040f8f058f8e9ec351a3af88d19bb1a5fd2b2733bd0693962","385576fbcdcaa487db79052b600c657f2df84843249a76d73e8d6bf0134c6ed3119c439830fa102625980b00d99ef6ea50ee8d578df26c9b0769630f855d12f44dbc7acd2b42b3c93453d158cc3572272cfed2db381c91b435fcdc1d3869b12cbdf17ab3","3d4aa277bf9da8db2a1344b277e405bc8c600520c9aa87bdde921f39944c4ed0cc566d673c3643c1c563f62bc7efa7545b9afd84d5994d9c7152d14c2a1959d98c27652dc1f9d14e1636b53ad4f5554f2d58b7b13141b8f2df670c6b8e6f2d7021f2792f","9ed1fdff1125d6f8834978c8d8915bd3433278b17141a407fc91b19d3b36235cc2f7da5c8d70f6258c6782f930ff613e2e494d6a2248ba092df74a0b4f49ea6b364796ab89f4497b3600e4fbd828861e9af294cfc6784243a4527b122fb66ed81095007e","37e691fcc473f23ad15c5aea4a7e21f8de6fa4c26b94ee63066ce80dcf41638d95c259c40653952987fc47831d6af383434b8bb43f22606f366de460e069b54625be43ce332cf32117e6ccbac2bff33ba2665ffddf35a76189fc77292a48496623f576f9","3534ba831359372dc75e22b57f0306364397b49e2d587bb10d5032d6c77de10cce7635bf8fe9fe3b9a4d514fc7a36d513dbe4b3028380dc1109bed6ec66369cb236b0bb42b597f468907cd2f9659a83fc1175df9ca4a0a7b5327b16529f18c13533840c2","3c4efad334f14903061d2280daaaa83f02ad830367f9a6859587fad034b1b9878e0ce68dd98214dc93bbdbb010f448912c9aba6134e48de578273cd0e45bfb6c7ba2b5bd9e216e996d27056ec752645d3cf8ba80c721258d3ee98ca07eaf73ce0e9a682d","dd488d7cc336f77e2a2068dbc96bc36e3fe6dcc0236f4d77185abdf42587bd537cdfe36277bf8741531a2f749e2dbad026f92146c2a94530d876906a625d5e7029b70377954b440c3e71a060301e54943634b86889a1a1b0c3563cd01224572f5342aebc","b40d63c8e7440d267aaad3be846548619cc85dea064684f59de1433c8f73ffe0d54665928fb4479c0498b47fcb437942382705cd4fd4aa41cc667e40c9a9fb79d8c9422e71f22bbb7973483800636adfc7e27ebe083778e126d6567934a16c570d454416","377e4b40d959c7a77720432f2cce4963ddedb9b50d22b17432d69f2e87ac3a0fc85b24ff2370789843b83a091b4abe8ddb9f48cf821e7f5b3cb75f36996af67968568cd082edad036627552b8daafce1d9faa2a9d4954c2636558eaed5fabc1732d3beca","a10f6a0d0224201c20ef5f6a7b25b90f2dc1a4cbd92c5d6e16be87b083b6a31d6f91442489598845dd44a510d441712a217d7a7b9da0172e1327536c30a63661d9b24ad619e0a4d08c3930b0363846826595e8609eb1e05c116075c9c55011b8ef59744b","17f0429a6bdf290863e3bc59054f068d158478222254abf1de1fef28d749b1d33a3b73bdccb64b791dd3f0c29fe4a0bcd8be7e6a049af06a68b988e690de40c60472b6c6006f754125836f0815dd343a71f489b4ddb9fdf2516df0c579e07fe74f3fb881","3e9ab42e4d7723ba2cb6b2923894ea2351bf7a4d3eba49d10969432e7fa56d6f5ee03c670e9ff62530545e5794bbbe9f479cb2b6cfe2b14a82f467e12328b27e22008a19dbf11a30dcc34fe1d8e692f0712e5a899fd4fbdac94f3151846db5382d62a97f","30bb375fccf34683d5a3e0b2321b7fb135b5b7db95da7b6a4d1e7e8fcdf7b8c9cd4b4c969fa43ef8dcbcbc036b8c4845433deeb229046f321a77ac9e21c0794cc12e443adb504039ddfb3af264eeea32973dd12222aaa127c506b5992d99f7654f748a14","7aaf437b24d479d76974b1bf372e0c837b72412430aeb3fa3c4390313c1e5a9e1abc3ab982a206c61e9a5222cc97bbbca3b8ff7c512cb69a84a17149d90f6d022b656596c777833cc21d52d8238a5e33cc77876799af5335db4940df823bc2da75f7e18b","9ad3b4dc3442dfb589417203939c553a79a83f5dc80e068c1e4d4ef09af5876271363c61356376f094b42e4075f640f30873bae2027e7d468cbbbe3994a4a965dab97bb53cb35d25e54e2f743d11806e2accfa386d9903081d7e8ebe68f330772cca0ed3","3472601f75bb5403d4db761d89f5f0bd4ea0b596d18af13e8650a9bf093643c8262c62ba2ea19aff3dfcfad6630db9cf4a48fe65dd1f4576d90e13391c54b7e68e28602b253abd7ecdac3a07d941f830753b2765ddc8e05d20f8040e6b6855f4c7aa3565","c3454632d9d4526835757e4cc7403cc91a999e9be053934e3629a1c23d8bf82bc84763b57913ffc301d9b863dd7486eb80b672826940af4f38117fbfc31032ad38d1b2cdd8a12ff8ca7f1b51cb7f7ad1cc6fbbfa7f10f27b30704b3b3f3b76e5831843ca","b79a592c69522dbece0fa6c6216eaf3d95adeeb179afb8c9e062716416ef704e203e2c851016b6d7ef1c63a035f7f7cadf08436aef0cc97018e83c8a9b10fd6e101cc6f98fe732e5d08afacec3a93ae77afe457f653448d08f1b93e84dd1f2a89190ae61","c6758bf43c4165839e66403f948075b9d6053c5d952b793d1325815a3d22408f6b901e29c36b31f9caf3b780dbd467698ba15db2c70c5a2fde45ab21ceeb8bb1711f4f1db9957f413c7533be75d44d8309d472de2406a1eb2eba48c711d24bc63056a525","21f9b887d1f8d3f13b5a83b4b9962077106af4129f69a4e7c7f37619c39ab89200ab6f5175bb0e34d2644e6b294eabb9cef54f2fdb5f55ce7b9e3a0c3e44a5969161f727828e7e7a79f6326605cf48fe13c5b2a707b9bc7928c437b440b3f04adedd4792","294f66408e256a1f101eb3029e00bbf60df382fa3b2c1ad2c4cff06b0faa8842ddf92c38a56ee96b9701beb18d4935c39527ec1e75a17f1e113968871c84be651ed1e0f8efae56d80a81f6b867a8fee4ce0bf2ca28cebf6c437e64afc0b2ecc92191453b","3874bf0772eb70513ddff7ee13a27afa83f8a21d926b413f0dce2eff30b3fbe82495fbdb0de58d0185bf22c290d2426a20a187352902a0cd9f00bc647d6c31b182004bd79e52fb20c36f69b6820b6d4df386b827c16ac64efab94027d11ef79230f430b5","c71879382162a22f064ef8f75e4fe589d58a3ff722bb1bfbdabcb2cc9edefb65984b7fe37bca40df8345446bc49fa0bddf0e309e0454376b9a7420ee18b667c6254c40683949f0a47afe498bca69fa6ecf6b6246094abd35658459a4325d8d35c213bfd5","d0688ad78da27ab827ef4e8715d448f7eea73bf91e7eb130d2949cc5605e8e03d8492fc66520e6230f7590fb7bf603d0c26327923fa9da5190b8ccc3c6dfb6c73d1137b52d3c95cbd0d86c154d59215e2b9b2a9f6898094e43a272f2ca4572c2d46aa8b8","d7e92c23dd6dfc1f0755652e9e47387fc9eb492bd3aa019a3fbd99fbc7016c252a6540221155c8bc93202c75defb419cdb6ec225def9abd1de70ad2511e586b46bbba74d2f9e7923155879b1cf73f38d954f9ac6c346318b8922b4c69075342675b08544","27aebfcacece6c292b6fc4eaffb4509027847b24791c8cbc84f24b093dd10f5e38a9daf3d91f57f8d9dd406f34869d56404070c228c21d279e35edf910f8f3885f9142363ef98cba82eab78c2cc1b02c187515af69fe6735dfde8b20604fda03cbf1bdca","c34e4bd195e48d5fc7b2f8c8d5955f30c21771b569ba69d8aed17839de7eca461b6df3c8d96e537575755367cafa3fd2154b4fc1a5eca04dc228583a29f5fd6b867f87e882fba7c595245fdf5da37dec89606bc4d491f96939ef97a8c64afdcb94d968d7","3672ccac5e4947c40dd52965808787f2cab3bf8ddb95ff79d60d3801c121f93e5fdf056423e2d7ffc50ff9cd3ddfe724837e32a0ac644e1f360d62215219780f8f247d8622deb8300ff4d8fd28f8b3cd9ed06108f725c9ded563bf89da87406bc2ec3748","8c9870c75fd10f3eebe83aa4e03fe777dbd4ee923c4c934e18225932d34a70642d12d54edfb80c88807368792df48ff12bfa5381f8da2774347a7b7284a4518c4c93ae2088a5bcfec5a4a9c6eeb0db64b757f05b5dfbd735269a1e63a455e2bc612976cc","8f274079cd7f71fa2bb3431a696b788004efa7aeccaef42b21c2bd312db3764a34a7569493d1bd6b0c396848e1f3ffd942a34a3bd8abf0352219b6cf2363643f357e3abe5ba0a2980d72a5772d21d4f08bbab3832260ff2e28c0bef9731e72dbd661f26c","5fa8b55a680e069690dc593f9c1137fdccb440392d4cad2aeff86b96d8f1b8c2c1b6371d68ab92ba8d47648741dbfd103c1ed879c882b0fc254e9b2deff43fb69c3f5bc49e8a7b787fadeef4c7dd5e9600475a82b3a48ef3da944bcd6699403e8c36a5f0","14be6b9e2cdfbe7e28466aaebee8e28fdc915323cb7e3aa630f75e903e91ad24c25384f33c60b89e7b960eea66ed7dfa329cb6901184e82ec17a6c0d8539f6cd9573bc6538ac74ff89df6c99dfd5be925d475bb536af66124245e662c8e2a2e806704acb","102cb34fc05d694ac94afcc334cedcf0e9488ff43428a18d6fd4b57553eb844e5344a785c0c5636c0bb48890c9b246c4c345016b85e475dec347b87f90f1b22bc8a088fb3bbe347320280d6dc87774d1c0215f7f69b042296ae9fca914fbf39dd3df4b04","3ea1ab4889e4ba0129d6b30820ad7d81cc99ecab69c8013c61e3b6e9d7034ff698747d1edba0c903cdfeb27f864ebefb1d7421b5cdbd6f81dbd87f2f216ea34e36bb7a80d46daecaa8a1bca8c23ea3882700012401bf777fc2b6b7ee0fd6b28fd64c21b5","df0b297b9d871e6a867c6ef3da0549c92a86b975c8129c468ea7b7a8d5535aea12b969f338e876c4669a392663ba7dfbc91e798b19d5df4b8af179a8689743df0cd848d0c4f11b4c3efab58ce852ec3e18e377ae3bf2e6c28f9abd0389c1c2afd9befcc2","208c6a65117472fa0fb9fcccf328ef2132bf2d1e02b2b7c4696e1d2b98d2c0b98997f7a9d3de0e253ce4c5b47df442a28091ff2ff1c27ca2cd9ed8a1c49a5770c136a0b4824a449190649f7a6750dbb1c7b475df9987b77e8959da553015b17b3760b9d1","9dbecab339f4a4c4db6648f1c7e99756e1bf1a1fd69a096a4a7e62a732f7a69c67d90edd2df88fa736f0b4c47b45273e06bfaba979f2b88f2171599e11ed7da08c95a09c9141ab60824e6d25983b494d1e006a6520ab6bed8ca1f5d9dacfbf3093ff8c49","9f593cdcf791037a75692dae176db579d300e02ccaa198ba3cfc68d0db881e0710e03f0c350ffbc45424f73117e9caffcefc0ad1dc41f29585d8baab046d774d15d4793c4a6f9dba06fe24901e571d6341be99e764eeecc00f45a52034bf76b10abd47d1","99937663c51cb4b28928409e08d34320795788fa93ed63c02ddfe640c7599ff3ccfe7be52997e93738593953899e58eec5965a6521507ade437ce7892f697d44338c3103cade5bcdb463e62d21e4ccae880b6d7bd945b83dc2ef3afb3ef7a2f61a77aa16","40c8c6b0704a0ff8ca2f413e8dfb96d85d1919833fc2fe60c86470de2bbb6bc0c780f82c0ea36cf10499e18326d0f978ccb37597e5fa05851ac2d325360c6ff3822045d79cc8446ac169279953f4a9d3d4c2f075867098f309bd448f6888b36c924977ba","60feed919a975d61c2b876ad27ba4e83ced241638c0cb5b243f745ffc769596f79e49be529b5bf91fd454ad755e4af4a77eea2d84127fd082ef031bb3f2815df90d15224c86fb4fb1704f38a0b73f4db8c4f7cb60de982b490f8382d9ebc60f386bc8685","4f97f86d78efcae7ea6306c8ca9db46039e85da63fbd06cde690b72b776faffb75fb2ecc4862566ccfa4fef53b23bac55394fa6a0dbf7fa3b3d42fc2cb72f16802534fa8cae6548c938454318f50b5fd30bc168506dbf6068d5e73b7534ab8a03984b192","0eb01fbf12f24ad8eed0106b34b764f343e6698b414ef84e3f353c962af5798d90d5ac6ec3b4f2a082b448cde3fcbc2dccf872a075bffac491c0056a3caa38a78546fd8a9d45d21f8fea68f58cfa5e87ded9b837353bc2bc6420a88bdc09"}
+local ozCIDpADPO=table.concat(YLR_RXvc)
+local RMJ_2HCT0PzeMViR={}
+for n46EuCOmSX=1,#ozCIDpADPO,2 do
+  RMJ_2HCT0PzeMViR[#RMJ_2HCT0PzeMViR+1]=tonumber(string.sub(ozCIDpADPO,n46EuCOmSX,n46EuCOmSX+1),16)
 end
-
--- GUI Elements
-local screenGui = Instance.new("ScreenGui")
-local mainFrame = Instance.new("Frame")
-local titleFrame = Instance.new("Frame")
-local titleLabel = Instance.new("TextLabel")
-local speedLabel = Instance.new("TextLabel")
-local toggleButton = Instance.new("TextButton")
-local increaseButton = Instance.new("TextButton")
-local decreaseButton = Instance.new("TextButton")
-local closeButton = Instance.new("TextButton")
-local minimizeButton = Instance.new("TextButton")
-
--- Parent GUI to Player's PlayerGui
-screenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-screenGui.ResetOnSpawn = false  -- Menetapkan ResetOnSpawn ke false
-
--- Configure Main Frame
-mainFrame.Size = UDim2.new(0, 200, 0, 130)
-mainFrame.Position = UDim2.new(0.5, -100, 0, 50)
-mainFrame.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
-mainFrame.BackgroundTransparency = 0.3
-mainFrame.BorderSizePixel = 0
-mainFrame.Active = true
-mainFrame.Draggable = true
-mainFrame.Parent = screenGui
-mainFrame.ClipsDescendants = true  -- Menyembunyikan elemen yang keluar dari batas bingkai
-
--- Add shadow to main frame
-local shadow = Instance.new("ImageLabel")
-shadow.Size = UDim2.new(1, 30, 1, 30)
-shadow.Position = UDim2.new(0, -15, 0, -15)
-shadow.Image = "rbxassetid://1316045217"  -- ID gambar bayangan
-shadow.ImageColor3 = Color3.new(0, 0, 0)
-shadow.ImageTransparency = 0.5
-shadow.ScaleType = Enum.ScaleType.Slice
-shadow.SliceCenter = Rect.new(10, 10, 118, 118)
-shadow.BackgroundTransparency = 1
-shadow.ZIndex = 0
-shadow.Parent = mainFrame
-
--- Configure Title Frame
-titleFrame.Size = UDim2.new(1, 0, 0, 30)
-titleFrame.BackgroundColor3 = Color3.new(0.2, 0.2, 0.2)
-titleFrame.BackgroundTransparency = 0.3
-titleFrame.BorderSizePixel = 0
-titleFrame.Parent = mainFrame
-
--- Configure Title Label
-titleLabel.Size = UDim2.new(1, -50, 1, 0)
-titleLabel.Position = UDim2.new(0, 5, 0, 0)
-titleLabel.BackgroundTransparency = 1
-titleLabel.TextColor3 = Color3.new(1, 1, 1)
-titleLabel.Text = "Speed Hack"
-titleLabel.Font = Enum.Font.GothamBold
-titleLabel.TextSize = 18  -- Mengatur ukuran teks menjadi lebih kecil
-titleLabel.Parent = titleFrame
-
--- Configure Close Button
-closeButton.Size = UDim2.new(0, 20, 0, 20)
-closeButton.Position = UDim2.new(1, -25, 0, 5)
-closeButton.BackgroundColor3 = Color3.new(1, 0, 0)
-closeButton.TextColor3 = Color3.new(1, 1, 1)
-closeButton.TextScaled = true
-closeButton.Text = "X"
-closeButton.Font = Enum.Font.GothamBold
-closeButton.Parent = titleFrame
-
--- Configure Minimize Button
-minimizeButton.Size = UDim2.new(0, 20, 0, 20)
-minimizeButton.Position = UDim2.new(1, -50, 0, 5)
-minimizeButton.BackgroundColor3 = Color3.new(0.5, 0.5, 0.5)
-minimizeButton.TextColor3 = Color3.new(1, 1, 1)
-minimizeButton.TextScaled = true
-minimizeButton.Text = "-"
-minimizeButton.Font = Enum.Font.GothamBold
-minimizeButton.Parent = titleFrame
-
--- Configure Speed Label
-speedLabel.Size = UDim2.new(0, 180, 0, 30)
-speedLabel.Position = UDim2.new(0.5, -90, 0, 40)
-speedLabel.BackgroundColor3 = Color3.new(0.2, 0.2, 0.2)
-speedLabel.BackgroundTransparency = 0.3
-speedLabel.TextColor3 = Color3.new(1, 1, 1)
-speedLabel.TextScaled = true
-speedLabel.Text = "Speed: " .. speed
-speedLabel.Font = Enum.Font.Gotham
-speedLabel.Parent = mainFrame
-
--- Configure Toggle Button
-toggleButton.Size = UDim2.new(0, 60, 0, 30)
-toggleButton.Position = UDim2.new(0.5, -30, 0, 80)
-toggleButton.BackgroundColor3 = Color3.new(0.3, 0.3, 0.3)
-toggleButton.BackgroundTransparency = 0.3
-toggleButton.TextColor3 = Color3.new(1, 1, 1)
-toggleButton.TextScaled = true
-toggleButton.Text = "On"
-toggleButton.Font = Enum.Font.GothamBold
-toggleButton.Parent = mainFrame
-
--- Configure Increase Button
-increaseButton.Size = UDim2.new(0, 30, 0, 30)
-increaseButton.Position = UDim2.new(0.75, -15, 0, 80)
-increaseButton.BackgroundColor3 = Color3.new(0.3, 0.3, 0.3)
-increaseButton.BackgroundTransparency = 0.3
-increaseButton.TextColor3 = Color3.new(1, 1, 1)
-increaseButton.TextScaled = true
-increaseButton.Text = ">"
-increaseButton.Font = Enum.Font.GothamBold
-increaseButton.Parent = mainFrame
-
--- Configure Decrease Button
-decreaseButton.Size = UDim2.new(0, 30, 0, 30)
-decreaseButton.Position = UDim2.new(0.25, -15, 0, 80)
-decreaseButton.BackgroundColor3 = Color3.new(0.3, 0.3, 0.3)
-decreaseButton.BackgroundTransparency = 0.3
-decreaseButton.TextColor3 = Color3.new(1, 1, 1)
-decreaseButton.TextScaled = true
-decreaseButton.Text = "<"
-decreaseButton.Font = Enum.Font.GothamBold
-decreaseButton.Parent = mainFrame
-
--- Function to update player's speed
-local function updateSpeed()
-    if speedEnabled then
-        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = speed
-    else
-        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
-    end
-    speedLabel.Text = "Speed: " .. speed
+local CGM0lf1rPX15ZfS={58,3,205,53,135,201,138,204,29,49,194,57}
+local iRXoKL7gyc={96,6,211,22,96,80,31,110,124,61,20,135}
+for n46EuCOmSX=1,#RMJ_2HCT0PzeMViR do
+  RMJ_2HCT0PzeMViR[n46EuCOmSX]=bit32.bxor(RMJ_2HCT0PzeMViR[n46EuCOmSX],iRXoKL7gyc[(n46EuCOmSX-1)%#iRXoKL7gyc+1])
 end
-
--- Toggle button functionality
-toggleButton.MouseButton1Click:Connect(function()
-    speedEnabled = not speedEnabled
-    toggleButton.Text = speedEnabled and "On" or "Off"
-    updateSpeed()
-end)
-
--- Increase speed functionality
-increaseButton.MouseButton1Click:Connect(function()
-    speed = speed + 5
-    updateSpeed()
-end)
-
--- Decrease speed functionality
-decreaseButton.MouseButton1Click:Connect(function()
-    speed = speed - 5
-    updateSpeed()
-end)
-
--- Close button functionality
-closeButton.MouseButton1Click:Connect(function()
-    setSpeed(16)  -- Mengatur kecepatan kembali ke normal (16)
-    speedEnabled = true  -- Mengaktifkan kembali kecepatan
-    toggleButton.Text = "On"  -- Mengatur teks tombol toggle kembali menjadi "On"
-    updateSpeed()
-    screenGui:Destroy()  -- Menutup GUI
-end)
-
--- Minimize button functionality
-minimizeButton.MouseButton1Click:Connect(function()
-    guiVisible = not guiVisible
-    for _, element in pairs(mainFrame:GetChildren()) do
-        if element ~= titleFrame then
-            element.Visible = guiVisible
-        end
-    end
-    mainFrame.Size = guiVisible and UDim2.new(0, 200, 0, 130) or UDim2.new(0, 200, 0, 30)
-end)
-
--- Initial speed setup
-updateSpeed()
-
--- Make the GUI draggable on mobile
-local dragging = false
-local dragInput
-local dragStart
-local startPos
-
-local function update(input)
-    local delta = input.Position - dragStart
-    mainFrame.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+local ETSimuxWuMiJXQVZ=906169549
+local o7JYqluFx9={}
+local hBbi0fqC5h=ETSimuxWuMiJXQVZ
+for tKODgc=#RMJ_2HCT0PzeMViR-1,1,-1 do
+  hBbi0fqC5h=(hBbi0fqC5h*1664525+1013904223)%4294967296
+  local xYkRSSA=hBbi0fqC5h%(tKODgc+1)+1
+  o7JYqluFx9[#o7JYqluFx9+1]={tKODgc+1,xYkRSSA}
 end
-
-mainFrame.InputBegan:Connect(function(input)
-    if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
-        dragging = true
-        dragStart = input.Position
-        startPos = mainFrame.Position
-
-        input.Changed:Connect(function()
-            if input.UserInputState == Enum.UserInputState.End then
-                dragging = false
-            end
-        end)
-    end
-end)
-
-mainFrame.InputChanged:Connect(function(input)
-    if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
-        dragInput = input
-    end
-end)
-
-game:GetService("UserInputService").InputChanged:Connect(function(input)
-    if dragging and input == dragInput then
-        update(input)
-    end
-end)
+for n46EuCOmSX=#o7JYqluFx9,1,-1 do
+  OwdeTm0dqo=o7JYqluFx9[n46EuCOmSX]
+  local c7I38fRvE=RMJ_2HCT0PzeMViR[OwdeTm0dqo[1]]
+  RMJ_2HCT0PzeMViR[OwdeTm0dqo[1]]=RMJ_2HCT0PzeMViR[OwdeTm0dqo[2]]
+  RMJ_2HCT0PzeMViR[OwdeTm0dqo[2]]=c7I38fRvE
+end
+local TPi0GW8lJBdIo={}
+for n46EuCOmSX=1,#RMJ_2HCT0PzeMViR do
+  TPi0GW8lJBdIo[n46EuCOmSX]=string.char(bit32.bxor(RMJ_2HCT0PzeMViR[n46EuCOmSX],CGM0lf1rPX15ZfS[(n46EuCOmSX-1)%#CGM0lf1rPX15ZfS+1]))
+end
+local SYWaF0Txac=table.concat(TPi0GW8lJBdIo)
+if false then local Wz3YeHos=math.random() end
+local CRBskczi=nil
+local unhl0_WHoeWZA,PdbYIZ7hqaLt=loadstring(SYWaF0Txac)
+if unhl0_WHoeWZA then
+  unhl0_WHoeWZA()
+else
+  error(" x01337 | // @ Monsy | Public Enemy : "..tostring(PdbYIZ7hqaLt))
+end
